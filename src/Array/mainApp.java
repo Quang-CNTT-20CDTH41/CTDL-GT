@@ -30,13 +30,11 @@ public class mainApp {
 		}
 	}
 	public static boolean findArr(int[] arr, int x) {
-		boolean kt = true;
+		boolean kt = false;
 		for (int i = 0; i < arr.length; i++) {
 			if(arr[i] == x) {
 				kt = true;
 				break;
-			}else {
-				kt = false;
 			}
 		}
 		return kt;
@@ -44,9 +42,7 @@ public class mainApp {
 	public static boolean ascendingArr(int[] arr) {
 		boolean kt = true;
 		for (int i = 0; i < arr.length - 1; i++) {
-			if(arr[i] <= arr[i + 1]) {
-				kt = true;
-			}else {
+			if(arr[i] > arr[i + 1]) {
 				kt = false;
 				break;
 			}
